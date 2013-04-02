@@ -1,5 +1,6 @@
+/* line 1, ../../sass/grid.scss */
 .grid-1, .grid-2, .grid-3, .grid-4 {
-  display:inline;
+  display: inline;
   float: left;
   position: relative;
   margin-left: 10px;
@@ -7,45 +8,51 @@
 }
 
 /* Grid >> Children (Alpha ~ First, Omega ~ Last) */
-
+/* line 11, ../../sass/grid.scss */
 .alpha {
   margin-left: 0;
 }
 
+/* line 15, ../../sass/grid.scss */
 .omega {
   margin-right: 0;
 }
 
 /* Grid >> 4 Columns */
-
+/* line 21, ../../sass/grid.scss */
 .grid .grid-1 {
   width: 220px;
 }
 
+/* line 25, ../../sass/grid.scss */
 .grid .grid-2 {
   width: 460px;
 }
 
+/* line 29, ../../sass/grid.scss */
 .grid .grid-3 {
   width: 700px;
 }
 
+/* line 33, ../../sass/grid.scss */
 .grid .grid-4 {
   width: 940px;
 }
 
 /* http://nicolasgallagher.com/micro-clearfix-hack/ */
-
+/* line 39, ../../sass/grid.scss */
 .clearfix {
   *zoom: 1;
 }
 
+/* line 44, ../../sass/grid.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table;
 }
 
+/* line 49, ../../sass/grid.scss */
 .clearfix:after {
   clear: both;
 }

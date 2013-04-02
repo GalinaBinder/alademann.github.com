@@ -1,3 +1,0 @@
-[submodule "externals/sass-bootstrap"]
-	path = externals/sass-bootstrap
-	url = git@github.com:alademann/sass-bootstrap.git

@@ -10,7 +10,7 @@ javascripts_dir = "assets/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 #output_style = :expanded or :nested or :compact or :compressed
-output_style = :expanded
+output_style = :compressed
 
 additional_import_paths = ["externals/sass-bootstrap/sass"]
 

@@ -43,8 +43,8 @@
       function addRepo(repo) {
         var $item = $("<li>").addClass("span3 repo " + (repo.language || '').toLowerCase());
         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
-        $link.append($("<h2>").text(repo.name));
-        $link.append($("<h3>").text(repo.language));
+        $link.append($("<h3>").text(repo.name));
+        $link.append($("<h4>").text(repo.language));
         $link.append($("<p>").text(repoDescription(repo)));
         $item.appendTo("#repos");
       }

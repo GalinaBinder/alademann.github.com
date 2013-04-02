@@ -12,54 +12,54 @@
  */
 
 // Core variables and mixins
-@import "variables";
-@import "mixins";
+@import "../externals/sass-bootstrap/sass/_variables.scss";
+@import "../externals/sass-bootstrap/sass/_mixins.scss";
 
 // Reset
-@import "normalize";
-@import "print";
+@import "../externals/sass-bootstrap/sass/_normalize.scss";
+@import "../externals/sass-bootstrap/sass/_print.scss";
 
 // Core CSS
-@import "scaffolding";
-@import "type";
-@import "code";
-@import "grid";
+@import "../externals/sass-bootstrap/sass/_scaffolding.scss";
+@import "../externals/sass-bootstrap/sass/_type";
+@import "../externals/sass-bootstrap/sass/_code";
+@import "../externals/sass-bootstrap/sass/_grid.scss";
 
-@import "tables";
-@import "forms";
-@import "buttons";
+@import "../externals/sass-bootstrap/sass/_tables.scss";
+@import "../externals/sass-bootstrap/sass/_forms.scss";
+@import "../externals/sass-bootstrap/sass/_buttons.scss";
 
 // Components: common
-@import "component-animations";
-@import "glyphicons";
-@import "dropdowns";
-@import "wells";
-@import "close";
+@import "../externals/sass-bootstrap/sass/_component-animations.scss";
+@import "../externals/sass-bootstrap/sass/_glyphicons.scss";
+@import "../externals/sass-bootstrap/sass/_dropdowns.scss";
+@import "../externals/sass-bootstrap/sass/_wells.scss";
+@import "../externals/sass-bootstrap/sass/_close.scss";
 
 // Components: Nav
-@import "navs";
-@import "navbar";
-@import "button-groups";
-@import "breadcrumbs";
-@import "pagination";
-@import "pager";
+@import "../externals/sass-bootstrap/sass/_navs.scss";
+@import "../externals/sass-bootstrap/sass/_navbar.scss";
+@import "../externals/sass-bootstrap/sass/_button-groups.scss";
+@import "../externals/sass-bootstrap/sass/_breadcrumbs.scss";
+@import "../externals/sass-bootstrap/sass/_pagination.scss";
+@import "../externals/sass-bootstrap/sass/_pager.scss";
 
 // Components: Popovers
-@import "modals";
-@import "tooltip";
-@import "popovers";
+@import "../externals/sass-bootstrap/sass/_modals.scss";
+@import "../externals/sass-bootstrap/sass/_tooltip.scss";
+@import "../externals/sass-bootstrap/sass/_popovers.scss";
 
 // Components: Misc
-@import "alerts";
-@import "thumbnails";
-@import "media";
-@import "labels";
-@import "badges";
-@import "progress-bars";
-@import "accordion";
-@import "carousel";
-@import "jumbotron";
+@import "../externals/sass-bootstrap/sass/_alerts.scss";
+@import "../externals/sass-bootstrap/sass/_thumbnails.scss";
+@import "../externals/sass-bootstrap/sass/_media.scss";
+@import "../externals/sass-bootstrap/sass/_labels.scss";
+@import "../externals/sass-bootstrap/sass/_badges.scss";
+@import "../externals/sass-bootstrap/sass/_progress-bars.scss";
+@import "../externals/sass-bootstrap/sass/_accordion.scss";
+@import "../externals/sass-bootstrap/sass/_carousel.scss";
+@import "../externals/sass-bootstrap/sass/_jumbotron.scss";
 
 // Utility classes
-@import "utilities"; // Has to be last to override when necessary
-@import "responsive-utilities"; 
+@import "../externals/sass-bootstrap/sass/_utilities.scss"; // Has to be last to override when necessary
+@import "../externals/sass-bootstrap/sass/_responsive-utilities.scss"; 

@@ -24,56 +24,86 @@
   </head>
   <body>
 
-    <div class="container">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Aaron Lademann&rsquo;s Github Pages</h1>
-        <div class="row">
-          <div class="span3 offset3 text-center">
-            <a class="btn btn-primary btn-large" href="https://github.com/alademann/repositories" target="_blank">Aaron&rsquo;s Github Repos</a>
-          </div>
-          <div class="span3 text-center">
-            <a class="btn btn-primary btn-large" href="http://aaronlademann.com" target="_blank">Aaron&rsquo;s Portfolio</a>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 20px;">
-          <div class="span12 text-center">
-            <p class="lead"><a href="mailto:aaron@aaronlademann.com" rel="nofollow">Get in touch</a></p>
-          </div>
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> -->
+        <a class="navbar-brand" href="/">Aaron&rsquo;s Github</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="https://github.com/alademann/repositories" target="_blank" rel="nofollow">Repos</a></li>
+            <li><a href="http://aaronlademann.com" target="_blank" rel="nofollow">Portfolio</a></li>
+            <li><a href="mailto:aaron@aaronlademann.com" rel="nofollow">Contact</a></li>
+          </ul>
         </div>
       </div>
+    </div>
 
-      <div class="body-content">
+    <!-- Masthead
+    ================================================== -->
+    <div class="masthead docs-jumbotron">
+      <div class="container">
+        <h1>Aaron Lademann&rsquo;s Github</h1>
+        <p class="lead">This is my simple home for my collection of Github repositories, Gists, Projects and more.</p>
+        <p>
+          <a href="https://github.com/alademann/repositories" target="_blank" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Aarons Github Repos']);">Aaron&rsquo;s Github Repos</a>
+        </p>
+        <ul class="masthead-links">
+          <li>
+            <a href="http://aaronlademann.com" target="_blank" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Aarons Portfolio']);">Aaron&rsquo;s Portfolio</a>
+          </li>
+          <li>
+            <a href="mailto:aaron@aaronlademann.com" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Get in touch']);">Get in touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="span6">
-            <h2>Github Statistics</h2>
-            <p>
-              <a href="https://github.com/alademann/repositories" target="_blank"><span id="num-repos"><img src="assets/img/spinner.gif" /></span> public repos</a>
-              <br>
-              <a href="https://github.com/alademann/followers"><span id="num-followers"><img src="assets/img/spinner.gif" /></span> followers</a>
-            </p>
-          </div>
-          <div class="span6">
-            <h2>Recently Updated</h2>
-            <ol id="recently-updated-repos"></ol>
-         </div>
+
+    <!-- Main
+    ================================================== -->
+    <div class="container body-content">
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span6">
+          <h2>Github Statistics</h2>
+          <p>
+            <a href="https://github.com/alademann/repositories" target="_blank"><span id="num-repos"><img src="assets/img/spinner.gif" /></span> public repos</a>
+            <br>
+            <a href="https://github.com/alademann/followers"><span id="num-followers"><img src="assets/img/spinner.gif" /></span> followers</a>
+          </p>
         </div>
+        <div class="span6">
+          <h2>Recently Updated</h2>
+          <ol id="recently-updated-repos"></ol>
+       </div>
+      </div>
 
-        <div class="row">
-          <ol id="repos"></ol>
-        </div>
-
-        <hr>
-
-        <footer>
-          <p>&copy; 2013 <a href="http://aaronlademann.com" target="_blank">Aaron Lademann</a></p>
-        </footer>
+      <div class="row">
+        <ol id="repos"></ol>
       </div>
 
     </div> <!-- /container -->
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="docs-footer">
+      <div class="container">
+
+        <p>Designed and built by <a href="http://twitter.com/alademann" target="_blank">@alademann</a>.</p>
+
+        <div class="attrib">
+          <p><small>&copy; 2013 Aaron Lademann</small></p>
+        </div>
+
+      </div>
+    </footer>
 
   </body>
 </html>

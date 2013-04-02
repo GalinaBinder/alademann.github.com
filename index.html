@@ -76,7 +76,7 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/user/alademann/repos?callback=?"
+        var uri = "https://api.github.com/users/alademann/repos?callback=?"
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -132,13 +132,13 @@
       }
       addRepos();
 
-      // $.getJSON("https://api.github.com/orgs/twitter/members?callback=?", function (result) {
-      //   var members = result.data;
+      $.getJSON("https://api.github.com/users/alademann/followers?callback=?", function (result) {
+        var members = result.data;
 
-      //   $(function () {
-      //     $("#num-members").text(members.length);
-      //   });
-      // });
+        $(function () {
+          $("#num-followers").text(members.length);
+        });
+      });
 
       function randomItem(array) {
         return array[Math.floor(Math.random() * array.length)];
@@ -230,29 +230,59 @@
     </script>
   </head>
   <body>
-    <div id="wrapper" class="grid clearfix">
-      <div id="main" class="grid-1">
+
+    <div class="container">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
         <h1>Aaron Lademann&rsquo;s Github Pages</h1>
-      </div>
-
-      <div class="grid grid-3">
-        <div id="statistics" class="grid-1 alpha header">
-          <h3>Statistics</h3>
-          <p>
-            <a href="https://github.com/alademann/repositories" target="_blank"><span id="num-repos"><img src="assets/spinner.gif" /></span> public repos</a>
-            <!-- <br>
-            <a href="https://github.com/twitter"><span id="num-members"><img src="assets/spinner.gif" /></span> members</a> -->
-          </p>
-          <p class="email"><a href="mailto:opensource@twitter.com">opensource@twitter.com</a></p>
+        <div class="row">
+          <div class="span6">
+            <a class="btn btn-primary btn-large" href="https://github.com/alademann/repositories" target="_blank">Aaron&rsquo;s Github Repos</a>
+          </div>
+          <div class="span6">
+            <a class="btn btn-primary btn-large" href="http://aaronlademann.com" target="_blank">AaronLademann.com</a>
+          </div>
         </div>
-
-        <div id="recently-updated" class="grid-2 omega header">
-          <h3>Recently updated <a href="https://github.com/alademann/repositories" target="_blank">View All on GitHub</a></h3>
-          <ol id="recently-updated-repos"></ol>
+        <div class="row">
+          <div class="span12">
+            <p class="lead"><a href="mailto:aaron@aaronlademann.com" rel="nofollow">Get in touch</a></p>
+          </div>
         </div>
       </div>
 
-      <ol id="repos"></ol>
-    </div>
+      <div class="body-content">
+
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="span6">
+            <h2>Github Statistics</h2>
+            <p>
+              <a href="https://github.com/alademann/repositories" target="_blank"><span id="num-repos"><img src="assets/spinner.gif" /></span> public repos</a>
+              <br>
+              <a href="https://github.com/alademann/followers"><span id="num-followers"><img src="assets/spinner.gif" /></span> followers</a>
+            </p>
+          </div>
+          <div class="span6">
+            <h2>Recently Updated</h2>
+            <ol id="recently-updated-repos"></ol>
+         </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <ol id="repos"></ol>
+          </div>
+        </div>
+
+        <hr>
+
+        <footer>
+          <p>&copy; 2013 Aaron Lademann</p>
+        </footer>
+      </div>
+
+    </div> <!-- /container -->
+
   </body>
 </html>

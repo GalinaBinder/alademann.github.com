@@ -89,11 +89,17 @@ div.header h1 {
   margin-bottom: 10px;
 }
 
-#num-repos, #num-members {
+#num-repos, #num-followers {
   font-size: 14px;
   font-weight: bold;
   color: #0084b4;
   line-height: 15px;
+}
+
+#repos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #statistics a:link, #statistics a:visited {
@@ -140,6 +146,12 @@ div.header h1 {
 
 li.repo {
   height: 250px;
+  padding: 0;
+  margin: 0 15px 15px 0;
+}
+
+li.repo:last-child {
+  margin-right: 0;
 }
 
 li.repo > a {
